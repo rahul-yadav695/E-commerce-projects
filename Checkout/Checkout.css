@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.bgcart{
+    background-image: url(images/Rectangle\ 1\ \(3\).png);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-toggler{
+    box-shadow: none !important;
+}
+.rat1 input{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}
+.rat2 input{
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+}
+.btnn-1{
+    width: 150px;
+    height: 50px;
+    font-size: 1.1rem;
+    background-color: antiquewhite; 
+}
+.tyr input{
+    border: none;
+    text-decoration: underline;
+} 
