@@ -161,7 +161,89 @@
 
 
 
+.abs-div-img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: rgba(243, 38, 38, 0.788);
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: 12px;
+}
+.abs-div-img1{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: rgba(39, 185, 185, 0.945);
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: 12px;
+}
 
+.child-blur{
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+.abs-for-blur-child{
+    position: absolute !important;
+    text-align: center;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.346);
+    height: 100%;
+    width: 100%;
+    /* display: none !important; */
+    opacity: 0;
+    color: white !important;
+    transition: all 1s 0.01s ease !important;
+
+}
+.main-for-cart{
+    background-color: #f4f5f7;
+    position: relative;
+    border-radius: 1px;
+}
+.main-for-cart:hover .abs-for-blur-child{
+    /* display: block !important; */
+    opacity: 1 !important;
+
+}
+.linethrow{
+    text-decoration: line-through;
+}
+.img-detailes{
+    margin-top: -10px;
+}
+
+.main-for-anker-tag{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+.loading { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    width: 100%;
+}
 
 
 
