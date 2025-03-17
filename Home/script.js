@@ -42,7 +42,7 @@ let datas = [
         p6: "Like"
     },
     {
-        images: "../HomeImages/image 3.png",
+        images: "./images/Images (1).png",
         p1: "Lolito",
         p2: "Luxury big sofa",
         p3: `Rp 7.000.000 <span class="opacity-50"><del> Rp 14.000.000</del></span>`,
