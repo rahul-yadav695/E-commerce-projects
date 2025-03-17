@@ -32,7 +32,7 @@ let datas = [
         p6: "Like"
     },
     {
-        images: "../HomeImages/bdb0310fb379a6b1828809d2c0652533.png",
+        images: "./images/Images (3).png",
         p1: "Leviosa",
         p2: "Stylish cafe chair",
         p3: "Rp 2.500.000",
