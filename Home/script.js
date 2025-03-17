@@ -22,7 +22,7 @@ function isUserAuthenticated() {
 window.onload = isUserAuthenticated;
 let datas = [
     {
-        images: "../HomeImages/image 1.png",
+        images: "./images/Images.png",
         p1: "Syltherine",
         p2: "Stylish cafe chair",
         p3: `Rp 2.500.000 <span class="opacity-50"><del> Rp 3.500.000</del></span>`,
