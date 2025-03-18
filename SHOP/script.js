@@ -100,6 +100,8 @@ function homeproducts() {
     let mainrow = document.getElementById("loder-row")
     mainrow.innerHTML = " "
 
+    console.log(mainrow,"sdfdfdf ")
+
     data.map((value, key) => {
       let mainrow = document.getElementById("loder-row")
       mainrow.innerHTML += `
