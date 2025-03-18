@@ -15,11 +15,7 @@ function isuserauthicated() {
       // if(result.success){
       let body = document.getElementsByTagName("body")
       body[0].children[0].remove();
-      body[0].style.overflowY = "scroll"
-      // }else{
-      //     window.location.href="/sign-in-pages/signin.html"
-      //     console.log(result.error.explanation);
-      // }
+      body[0].style.overflowY = "scroll" 
     })
     .catch((error) => {
       console.log(error)
