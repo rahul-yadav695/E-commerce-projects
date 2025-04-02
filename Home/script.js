@@ -128,7 +128,8 @@ let data = [
 
 //   maindiv.appendChild(childdiv)
 //   mainrow.appendChild(maindiv)
-// }
+// } 
+
 
 function homeproducts() {
   setTimeout(() => {
@@ -184,3 +185,4 @@ function homeproducts() {
   }, 3000);
 }
 homeproducts();
+
