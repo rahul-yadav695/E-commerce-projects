@@ -1,228 +1,143 @@
-
-
-
 function isuserauthicated() {
-    const myHeaders = new Headers();
-    myHeaders.append("Authorization", "Bearer sa d,jnsaudsbsaxudnfbdmbcudfcia,bufvdkshkaihfbjdudshfkjdsfkdsakdsakmxidahfufdjf");
-  
-    const requestOptions = {
-      method: "GET",
-      headers: myHeaders,
-      redirect: "follow"
-    };
-  
-    fetch("https://admin-dev-backend.edvice.in/ping", requestOptions)
-      .then((response) => response.json())
-      .then((result) => {
-        // if(result.success){
-        let body = document.getElementsByTagName("body")
-        body[0].children[0].remove();
-        body[0].style.overflowY = "scroll"
-        // }else{
-        //     window.location.href="/sign-in-pages/signin.html"
-        //     console.log(result.error.explanation);
-        // }
-      })
-      .catch((error) => {
-        console.log(error)
-  
-      });
-  }
-  isuserauthicated();
-  
-  
-//   let datas = [
-//     {
-//         images: "./images/Images.png",
-//         p1: "Syltherine",
-//         p2: "Stylish cafe chair",
-//         p3: `Rp 2.500.000 <span class="opacity-50"><del> Rp 3.500.000</del></span>`,
-//         btn: "Add to cart",
-//         p4: "Share",
-//         p5: "Compare",
-//         p6: "Like"
-//     },
-//     {
-//         images: "./images/Images (3).png",
-//         p1: "Leviosa",
-//         p2: "Stylish cafe chair",
-//         p3: "Rp 2.500.000",
-//         btn: "Add to cart",
-//         p4: "Share",
-//         p5: "Compare",
-//         p6: "Like"
-//     },
-//     {
-//         images: "./images/Images (1).png",
-//         p1: "Lolito",
-//         p2: "Luxury big sofa",
-//         p3: `Rp 7.000.000 <span class="opacity-50"><del> Rp 14.000.000</del></span>`,
-//         btn: "Add to cart",
-//         p4: "Share",
-//         p5: "Compare",
-//         p6: "Like"
-//     },
-//     {
-//         images: "./images/Images (2).png",
-//         p1: "Respira",
-//         p2: "Outdoor bar table and stool",
-//         p3: "Rp 500.000",
-//         btn: "Add to cart",
-//         p4: "Share",
-//         p5: "Compare",
-//         p6: "Like"
-//     },
-//     {
-//         images: "./images/Images (4).png",
-//         p1: "Grifo",
-//         p2: "Night lamp",
-//         p3: "Rp 1.500.000",
-//         btn: "Add to cart",
-//         p4: "Share",
-//         p5: "Compare",
-//         p6: "Like"
-//     },
-//     {
-//         images: "./images/Images (2).png",
-//         p1: "Muggo",
-//         p2: "Small mug",
-//         p3: "Rp 150.000",
-//         btn: "Add to cart",
-//         p4: "Share",
-//         p5: "Compare",
-//         p6: "Like"
-//     },
-//     {
-//         images: "./images/Images.png",
-//         p1: "Pingky",
-//         p2: "Cute bed set",
-//         p3: `Rp 7.000.000 <span class="opacity-50"><del>Rp 14.000.000</del></span>`,
-//         btn: "Add to cart",
-//         p4: "Share",
-//         p5: "Compare",
-//         p6: "Like"
-//     },
-//     {
-//         images: "./images/Images (2).png",
-//         p1: "Potty",
-//         p2: "Minimalist flower pot",
-//         p3: "Rp 500.000",
-//         btn: "Add to cart",
-//         p4: "Share",
-//         p5: "Compare",
-//         p6: "Like"
-//     }
-// ]
+  const myHeaders = new Headers();
+  myHeaders.append("Authorization", "Bearer sa d,jnsaudsbsaxudnfbdmbcudfcia,bufvdkshkaihfbjdudshfkjdsfkdsakdsakmxidahfufdjf");
+
+  const requestOptions = {
+    method: "GET",
+    headers: myHeaders,
+    redirect: "follow"
+  };
+
+  fetch("https://admin-dev-backend.edvice.in/ping", requestOptions)
+    .then((response) => response.json())
+    .then((result) => {
+      // if(result.success){
+      let body = document.getElementsByTagName("body")
+      body[0].children[0].remove();
+      body[0].style.overflowY = "scroll"
+      // }else{
+      //     window.location.href="/sign-in-pages/signin.html"
+      //     console.log(result.error.explanation);
+      // }
+    })
+    .catch((error) => {
+      console.log(error)
+
+    });
+}
+isuserauthicated();
+
+
 let data = [
-    {
-      images:"./images/Images.png",
-      brand: "Syltherine",
-      caterogy: "Stylish cafe chair",
-      discountprice: "2.500.000",
-      totalprice: "3.500.000",
-      discountpersent: "-30%"
-    },
-    {
-      images: "./images/Images (3).png",
-      brand: "Leviosa",
-      caterogy: "Stylish cafe chair",
-      discountprice: "2.500000",
-      discountpersent: "New"
-  
-    },
-    {
-      images:  "./images/Images (1).png",
-      brand: "Lolito",
-      caterogy: "Luxury big sofa",
-      discountprice: "Rp 7.000.000",
-      totalprice: "14.000.000",
-      discountpersent: "-50%"
-  
-    },
-    {
-      images: "./images/Images (2).png",
-      brand: "Syltherine",
-      caterogy: "Stylish cafe chair",
-      discountprice: "2.500000",
-      totalprice: "3.500000",
-      discountpersent: "New"
-  
-    },
-    {
-      images: "./images/Images (4).png",
-      brand: "Grifo",
-      caterogy: "Night lamp",
-      discountprice: "1.500.000",
-      discountpersent: "New"
-    },
-    {
-      images: "./images/Images (2).png",
-      brand: "Muggo",
-      caterogy: "Small mug",
-      discountprice: "150.000",
-      discountpersent: "New"
-  
-    },
-    {
-      images:"./images/Images.png",
-      brand: "Pingky",
-      caterogy: "Cute bed set",
-      discountprice: "7.000.000",
-      totalprice: "14.000.000",
-      discountpersent: "-50%"
-  
-    },
-    {
-      images:  "./images/Images (2).png",
-      brand: "Potty",
-      caterogy: "Minimalist flower pot",
-      discountprice: "500.000",
-      discountpersent: "New"
-    }
-  
-  ]
-  
-  // function addproducts(img,brands,caterogys,totprice,disprice){
-  //   let mainrow = document.getElementById("loder-row");
-  //   let maindiv = document.createElement("div")
-  //   maindiv.classList.add("col-sm-12","col-md-6", "col-lg-3", "mt-3")
-  
-  //   let childdiv = document.createElement("div")
-  
-  //   let images = document.createElement("img")
-  //   images.src = img
-  //   images.classList.add("w-100")
-  //   childdiv.appendChild(images)
-  
-  //   let brand = document.createElement("h5")
-  //   brand.innerText = brands
-  //   childdiv.appendChild(brand)
-  
-  //   let categroy = document.createElement("p")
-  //   categroy.innerText = caterogys
-  //   childdiv.appendChild(categroy)
-  
-  //   let discountprice = document.createElement("h6")
-  //   discountprice.innerText = totprice
-  //   childdiv.appendChild(discountprice)
-  
-  //   let totalprice = document.createElement("p")
-  //   totalprice.innerText = disprice
-  //   totalprice.style.textDecoration="line-through"
-  //   childdiv.appendChild(totalprice)
-  
-  //   maindiv.appendChild(childdiv)
-  //   mainrow.appendChild(maindiv)
-  // }
-  
-  function homeproducts() {
-    setTimeout(() => {
+  {
+    images: "./images/Images.png",
+    brand: "Syltherine",
+    caterogy: "Stylish cafe chair",
+    discountprice: "2.500.000",
+    totalprice: "3.500.000",
+    discountpersent: "-30%"
+  },
+  {
+    images: "./images/Images (3).png",
+    brand: "Leviosa",
+    caterogy: "Stylish cafe chair",
+    discountprice: "2.500000",
+    discountpersent: "New"
+
+  },
+  {
+    images: "./images/Images (1).png",
+    brand: "Lolito",
+    caterogy: "Luxury big sofa",
+    discountprice: "Rp 7.000.000",
+    totalprice: "14.000.000",
+    discountpersent: "-50%"
+
+  },
+  {
+    images: "./images/Images (2).png",
+    brand: "Syltherine",
+    caterogy: "Stylish cafe chair",
+    discountprice: "2.500000",
+    totalprice: "3.500000",
+    discountpersent: "New"
+
+  },
+  {
+    images: "./images/Images (4).png",
+    brand: "Grifo",
+    caterogy: "Night lamp",
+    discountprice: "1.500.000",
+    discountpersent: "New"
+  },
+  {
+    images: "./images/Images (2).png",
+    brand: "Muggo",
+    caterogy: "Small mug",
+    discountprice: "150.000",
+    discountpersent: "New"
+
+  },
+  {
+    images: "./images/Images.png",
+    brand: "Pingky",
+    caterogy: "Cute bed set",
+    discountprice: "7.000.000",
+    totalprice: "14.000.000",
+    discountpersent: "-50%"
+
+  },
+  {
+    images: "./images/Images (2).png",
+    brand: "Potty",
+    caterogy: "Minimalist flower pot",
+    discountprice: "500.000",
+    discountpersent: "New"
+  }
+
+]
+
+// function addproducts(img,brands,caterogys,totprice,disprice){
+//   let mainrow = document.getElementById("loder-row");
+//   let maindiv = document.createElement("div")
+//   maindiv.classList.add("col-sm-12","col-md-6", "col-lg-3", "mt-3")
+
+//   let childdiv = document.createElement("div")
+
+//   let images = document.createElement("img")
+//   images.src = img
+//   images.classList.add("w-100")
+//   childdiv.appendChild(images)
+
+//   let brand = document.createElement("h5")
+//   brand.innerText = brands
+//   childdiv.appendChild(brand)
+
+//   let categroy = document.createElement("p")
+//   categroy.innerText = caterogys
+//   childdiv.appendChild(categroy)
+
+//   let discountprice = document.createElement("h6")
+//   discountprice.innerText = totprice
+//   childdiv.appendChild(discountprice)
+
+//   let totalprice = document.createElement("p")
+//   totalprice.innerText = disprice
+//   totalprice.style.textDecoration="line-through"
+//   childdiv.appendChild(totalprice)
+
+//   maindiv.appendChild(childdiv)
+//   mainrow.appendChild(maindiv)
+// }
+
+function homeproducts() {
+  setTimeout(() => {
+    let mainrow = document.getElementById("loder-row")
+    mainrow.innerHTML = " "
+
+    data.map((value, key) => {
       let mainrow = document.getElementById("loder-row")
-      mainrow.innerHTML = " "
-  
-      data.map((value, key) => {
-        let mainrow = document.getElementById("loder-row")
-        mainrow.innerHTML += `
+      mainrow.innerHTML += `
           <div class="col-sm-12 col-md-6 col-lg-3 mt-3 ">
                 <div class="p-1">
                  <a href="/single pruducts/products.html" class="main-for-anker-tag"> <div class="main-for-cart">
@@ -265,8 +180,7 @@ let data = [
                 </div>
                 </div>
         `
-      });
-    }, 2000);
-  }
-  homeproducts();
-  
+    });
+  }, 3000);
+}
+homeproducts();
