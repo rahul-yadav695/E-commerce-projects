@@ -30,6 +30,7 @@
             display: flex;
             gap: 20px;
             font-size: 20px;
+            transition: all 10ms ease-in-out;  
         }
 
         .menu-icon {
@@ -76,18 +77,6 @@
     </div>
 
     <script>
-        let menu = document.getElementById("logos_value");
-        menu.style.maxHeight = "0px"
-        function menus() {
-            if(menu.style.maxHeight === "300px"){
-                menu.style.maxHeight = "0px"
-            }else{
-                menu.style.maxHeight = "0px"
-            }
-        }
-
-
-
         function Menu_nav() {
             let menu = document.getElementById("logos_value");
             if (menu.style.display === "flex") {
@@ -95,7 +84,7 @@
             } else {
                 menu.style.display = "flex";
             }
-        } 
+        }
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
