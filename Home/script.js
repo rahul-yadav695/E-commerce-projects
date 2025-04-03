@@ -158,7 +158,7 @@ function homeproducts() {
                  </div>
                   <div class="abs-for-blur-child">
                    <div class="mt-5 pt-5">
-                    <div class="mt-5">
+                    <div class="mt-5">  
                       <button class="btn btn-light ps-4 pe-4 ms-3 text-warning">Add to cart</button>
                       <div class="d-flex  align-items-center gap-3">
                         <div class="d-flex align-items-center gap-1 ms-2">
