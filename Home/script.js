@@ -97,38 +97,38 @@ let data = [
 
 ]
 
-// function addproducts(img,brands,caterogys,totprice,disprice){
-//   let mainrow = document.getElementById("loder-row");
-//   let maindiv = document.createElement("div")
-//   maindiv.classList.add("col-sm-12","col-md-6", "col-lg-3", "mt-3")
+function addproducts(img,brands,caterogys,totprice,disprice){
+  let mainrow = document.getElementById("loder-row");
+  let maindiv = document.createElement("div")
+  maindiv.classList.add("col-sm-12","col-md-6", "col-lg-3", "mt-3")
 
-//   let childdiv = document.createElement("div")
+  let childdiv = document.createElement("div")
 
-//   let images = document.createElement("img")
-//   images.src = img
-//   images.classList.add("w-100")
-//   childdiv.appendChild(images)
+  let images = document.createElement("img")
+  images.src = img
+  images.classList.add("w-100")
+  childdiv.appendChild(images)
 
-//   let brand = document.createElement("h5")
-//   brand.innerText = brands
-//   childdiv.appendChild(brand)
+  let brand = document.createElement("h5")
+  brand.innerText = brands
+  childdiv.appendChild(brand)
 
-//   let categroy = document.createElement("p")
-//   categroy.innerText = caterogys
-//   childdiv.appendChild(categroy)
+  let categroy = document.createElement("p")
+  categroy.innerText = caterogys
+  childdiv.appendChild(categroy)
 
-//   let discountprice = document.createElement("h6")
-//   discountprice.innerText = totprice
-//   childdiv.appendChild(discountprice)
+  let discountprice = document.createElement("h6")
+  discountprice.innerText = totprice
+  childdiv.appendChild(discountprice)
 
-//   let totalprice = document.createElement("p")
-//   totalprice.innerText = disprice
-//   totalprice.style.textDecoration="line-through"
-//   childdiv.appendChild(totalprice)
+  let totalprice = document.createElement("p")
+  totalprice.innerText = disprice
+  totalprice.style.textDecoration="line-through"
+  childdiv.appendChild(totalprice)
 
-//   maindiv.appendChild(childdiv)
-//   mainrow.appendChild(maindiv)
-// } 
+  maindiv.appendChild(childdiv)
+  mainrow.appendChild(maindiv)
+} 
 
 
 function homeproducts() {
