@@ -76,17 +76,7 @@
     </div>
 
     <script>
-        function Menu_nav() {
-            let menu = document.getElementById("logos_value");
-            if (menu.style.display === "flex") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "flex";
-            }
-        }
-
-
-        /*let menu = document.getElementById("logos_value");
+        let menu = document.getElementById("logos_value");
         menu.style.maxHeight = "0px"
         function menus() {
             if(menu.style.maxHeight === "300px"){
@@ -94,8 +84,18 @@
             }else{
                 menu.style.maxHeight = "0px"
             }
-        }/*
+        }
 
+
+
+        function Menu_nav() {
+            let menu = document.getElementById("logos_value");
+            if (menu.style.display === "flex") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "flex";
+            }
+        } 
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
