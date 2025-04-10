@@ -97,10 +97,10 @@ let data = [
 
 ]
 
-function addproducts(img,brands,caterogys,totprice,disprice){
+function addproducts(img, brands, caterogys, totprice, disprice) {
   let mainrow = document.getElementById("loder-row");
   let maindiv = document.createElement("div")
-  maindiv.classList.add("col-sm-12","col-md-6", "col-lg-3", "mt-3")
+  maindiv.classList.add("col-sm-12", "col-md-6", "col-lg-3", "mt-3")
 
   let childdiv = document.createElement("div")
 
@@ -123,12 +123,12 @@ function addproducts(img,brands,caterogys,totprice,disprice){
 
   let totalprice = document.createElement("p")
   totalprice.innerText = disprice
-  totalprice.style.textDecoration="line-through"
+  totalprice.style.textDecoration = "line-through"
   childdiv.appendChild(totalprice)
 
   maindiv.appendChild(childdiv)
   mainrow.appendChild(maindiv)
-} 
+}
 
 
 function homeproducts() {
