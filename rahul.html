@@ -1,32 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-
-<body>
-
-</body>
-<script>
-    function VideoList({ videos, emptyHeading }) {
-        const count = videos.length;
-        let heading = emptyHeading;
-        if (count > 0) {
-            const noun = count > 1 ? 'Videos' : 'Video';
-            heading = count + ' ' + noun;
-        }
-        return (
-            <section>
-                <h2>{heading}</h2>
-                {videos.map(video =>
-                    <Video key={video.id} video={video} />
-                )}
-            </section>
-        );
-    }
-</script>
-
-</html>
+ </head>
+ <body>
+    
+ </body>
+ </html>
