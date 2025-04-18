@@ -1,4 +1,4 @@
-let count = 0;
-let valuecount = document.getElementById('plus1')
+let counter = 0; 
+let ValueCount = document.getElementById("plus1")
 
-const incresVal = document.getElementById('')
+let one = document.getElementById("")

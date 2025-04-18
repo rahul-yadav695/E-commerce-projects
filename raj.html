@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bubble Game</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #282c34;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .game-container {
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .game-area {
+            width: 600px;
+            height: 400px;
+            background-color: #444;
+            border: 2px solid #fff;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .bubble {
+            width: 50px;
+            height: 50px;
+            background-color: #00aaff;
+            border-radius: 50%;
+            position: absolute;
+            cursor: pointer;
+            animation: popIn 0.3s ease-in;
+        }
+
+        @keyframes popIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .game-over {
+            display: none;
+            margin-top: 20px;
+            font-size: 24px;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Bubble Game</h1>
+            <div>Score: <span id="score">0</span></div>
+            <div>Time Left: <span id="timer">60</span>s</div>
+        </div>
+        <div id="gameArea" class="game-area"></div>
+        <div id="gameOver" class="game-over">Game Over! Final Score: <span id="finalScore"></span></div>
+    </div>
+
+    <script>
+        let score = 0;
+        let timeLeft = 60;
+        const scoreDisplay = document.getElementById("score");
+        const timerDisplay = document.getElementById("timer");
+        const gameArea = document.getElementById("gameArea");
+        const gameOver = document.getElementById("gameOver");
+        const finalScore = document.getElementById("finalScore");
+
+        function randomPosition(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        function createBubble() {
+            const bubble = document.createElement("div");
+            bubble.classList.add("bubble");
+            bubble.style.top = `${randomPosition(gameArea.clientHeight - 50)}px`;
+            bubble.style.left = `${randomPosition(gameArea.clientWidth - 50)}px`;
+
+            bubble.addEventListener("click", () => {
+                score++;
+                scoreDisplay.textContent = score;
+                gameArea.removeChild(bubble);
+            });
+
+            gameArea.appendChild(bubble);
+
+            setTimeout(() => {
+                if (gameArea.contains(bubble)) {
+                    gameArea.removeChild(bubble);
+                }
+            }, 2000);
+        }
+
+        function startGame() {
+            const bubbleInterval = setInterval(() => {
+                if (timeLeft <= 0) {
+                    clearInterval(bubbleInterval);
+                } else {
+                    createBubble();
+                }
+            }, 800);
+
+            const timerInterval = setInterval(() => {
+                timeLeft--;
+                timerDisplay.textContent = timeLeft;
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    endGame();
+                }
+            }, 1000);
+        }
+
+        function endGame() {
+            gameArea.innerHTML = "";
+            gameOver.style.display = "block";
+            finalScore.textContent = score;
+        }
+
+        startGame();
+
+    </script>
+</body>
+
+</html>
