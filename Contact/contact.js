@@ -18,6 +18,5 @@ two.addEventListener('click' , function () {
 
 const raj = document.getElementById('rahulk')
 raj.addEventListener('click' , function () {
-    raj.innerHTML = `
-    `
+    alert("Hello Bhai Saab")
 })
